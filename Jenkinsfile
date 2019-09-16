@@ -17,7 +17,11 @@ node {
 
          when {
                 branch 'development'
-              } 
+              }
+	     steps {
+		     sh 'pwd'
+		     sh 'whoami'
+	     }
        
         app.inside {
             echo "Tests passed"
