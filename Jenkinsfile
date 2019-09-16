@@ -10,7 +10,7 @@ node {
     stage('Build image') {
         /* This builds the actual image */
 
-        app = docker.build("yys2000/nodeapp:v2")
+        app = docker.build("yys2000/nodeapp")
     }
 
     stage('Test image') {
