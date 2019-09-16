@@ -14,7 +14,11 @@ node {
     }
 
     stage('Test image') {
-        
+
+         when {
+                branch 'development'
+              } 
+       
         app.inside {
             echo "Tests passed"
         }
